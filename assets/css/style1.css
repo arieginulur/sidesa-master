@@ -1,0 +1,222 @@
+/* body */
+.body{
+    color: rgb(0, 0, 0);
+ }
+ /* Navbar */
+ .navbar-brand {
+     font-family:'Big Shoulders Stencil Display';
+     font-size: 20px;
+     margin-left: 80px;
+     margin-top:-90px;
+ }
+ .nav-link{
+     text-transform: capitalize;
+     margin-right: 30px;}
+ .login{
+     background-color:rgb(21, 171, 240);
+     text-transform: capitalize;
+     border-radius: 70px;
+ }
+ .logo {
+     width: 75px;
+     height: 60px;
+     margin-left: -auto;
+     margin-right: 10px;}
+ .navbar-toggler-icon {
+     border-color: rgb(0, 0, 0);
+     margin-top: auto;
+     background-image: url(img/button.png);
+ }
+ 
+ /* carousel*/
+ .carousel h5 {
+     font-size: 20px;
+     margin-bottom:20px;
+     text-shadow: 1px 1px 1px rgb(0, 0, 0);
+     color: white !important;
+     z-index: 1;
+     position: relative;
+ }
+ .carousel p {
+     font-size: 20px;
+     margin-bottom: 150px;
+     text-shadow: 1px 1px 1px rgb(0, 0, 0);
+     color: white !important;
+     z-index: 1;
+     position: relative;
+ }
+ /* info panel */
+ .info-panel{
+     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+     border-radius: 40px;
+     background-color: white;
+     padding: auto;
+     padding-top: 10px;
+     margin-top: 50px;
+     margin-bottom: 50px;
+ }
+ .info-panel img{
+     width: 50px;
+     height: 50px;
+ }
+ .info-panel h4{
+     font-size: 15px;
+     text-transform: uppercase;
+     font-weight: bold;
+     margin-top: -40px;
+     margin-left: 70px;
+ }
+ .info-panel p{
+     font-size: 15px;
+     text-transform: uppercase;
+     font-weight: normal;
+     margin-top: -10px;
+     margin-left: 70px;
+ }
+ .info-panel img h4 p {
+     align-content: center;
+ }
+.info{
+margin-left: 70px;
+}
+
+ /* footer */
+ .footer {
+    background-color: #dcdcdcee;
+    padding-bottom: 3rem;
+  }
+  
+  .footer {
+    padding-top: 50px;
+  }
+  
+  .map {
+    margin-top: 10px;
+  }
+  
+  .footer img {
+    width: 80px;
+    height: 50px;
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    margin-right: 20px;
+  }
+  
+  .footer .bca {
+    width: 80px;
+    height: 40px;
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    margin-right: 20px;
+  }
+  
+  .footer .bni {
+    width: 80px;
+    height: 40px;
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    margin-right: 20px;
+  }
+  
+  .tengahatas {
+    margin-left: 120px;
+  }
+  
+  .tengahbawah {
+    margin-left: 120px;
+    margin-top: 50px;
+  }
+  
+  .tengahbawah2 {
+    margin-left: 120px;
+  }
+  
+  .jasa {
+    margin-top: 50px;
+  }
+  
+  .footer .kurir {
+    width: 80px;
+    height: 60px;
+  }
+  
+  .footer .kurir2 {
+    width: 50px;
+    height: 30px;
+  }
+  
+  .footer .kurir3 {
+    width: 80px;
+    height: 40px;
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    margin-left: 30px;
+  }
+  
+  .copy span {
+    color: red;
+  }
+  
+  .copyright {
+    text-align: center;
+  }
+  
+  section {
+    padding-top: 5rem;
+  }
+ /* Dekstop Versi */
+ @media (min-width: 992px){
+     .navbar-brand {
+         font-family:'Big Shoulders Stencil Display';
+         font-size: 50px;
+         margin-left: 15px;
+         margin-top:-10px;}
+ .navbar-brand .nav-link{
+     color: blue !important;
+     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0,8);
+     }
+     .nav-link{
+         text-transform: uppercase;
+         margin-right: 30px;}
+         .nav-link-login{
+             background-color: rgb(209, 26, 26);
+             text-transform: uppercase;
+             }
+ .nav-link:hover::after {
+     content: '';
+     display: block;
+     border-bottom: 3px solid blue;
+     width: 50%;
+     margin: auto;
+     padding: 5px;
+     margin-bottom: -8px;
+ }
+ .logo { 
+     width: 100px;
+     height: 95px;
+     margin-left: 10px;
+     margin-right: -50px;}
+ }
+ .carousel::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    position: absolute;
+    bottom: 0;
+}
+ .carousel h5 {
+     font-size: 30px;
+     margin-bottom:20px;
+     
+ }
+ .carousel p {
+     font-size: 25px;
+     margin-bottom: 150px;
+   
+ }

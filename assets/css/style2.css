@@ -1,0 +1,33 @@
+form {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 300px;
+    margin-left: 30px;
+  }
+  
+  #login {
+    margin-top: 10px;
+    margin-left: 80px;
+    margin-bottom: 50px;
+    width: 150px;
+  }
+  
+  .card {
+    margin-left: 470px;
+    margin-bottom: 50px;
+  }
+  
+  h3 {
+    text-align: center;
+    border-bottom: 3px solid red;
+    width: 200px;
+    margin-left: 310px;
+    margin: auto;
+    padding-top: 50px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+  }
+  .lgn {
+    margin-top: -40px;
+    margin-bottom: 100px;
+}
