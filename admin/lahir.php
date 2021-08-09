@@ -43,7 +43,7 @@ include "../config/koneksi.php";
                                 <div class="card-body">
                                     <a href="lahir_tambah" class="btn btn-primary"><i class="fas fa-plus"></i> Tambah</a>
                                     <hr>
-                                    <table class="table table-bordered table-striped">
+                                    <table id="tabel" class="table table-bordered table-striped">
                                         <thead>
                                             <tr>
                                                 <th>No</th>
@@ -54,9 +54,20 @@ include "../config/koneksi.php";
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr>
-                                                
-                                            </tr>
+                                            <?php
+                                                $no = 1;
+                                                $sql = mysqli_query($conn, "SELECT tbl_lahir.*, tbl_keluarga.no_kk,tbl_keluarga.nama_kk FROM tbl_lahir
+                                                LEFT JOIN tbl_keluarga ON tbl_lahir.id_keluarga = tbl_keluarga.id_keluarga");
+                                                while ($data = mysqli_fetch_array($sql)){
+                                            ?>
+                                                <tr>
+                                                    <td><?php echo $no; $no++ ?></td>
+                                                    <td><?php echo $data["nama"] ?></td>
+                                                    <td><?php echo $data["tanggal_lahir"] ?></td>
+                                                    <td><?php echo $data["jk"] ?></td>
+                                                    <td><?php echo $data["no_kk"] ?> - <?php echo $data["nama_kk"] ?></td>
+                                                </tr>
+                                            <?php } ?>
                                         </tbody>
                                     </table>
                                 </div>
@@ -69,6 +80,10 @@ include "../config/koneksi.php";
         <?php include "dashboard/_footer.php" ?>
     </div> <!-- end of wrapper -->
     <?php include "dashboard/_script.php" ?>
-
+    <script>
+        $(document).ready(function(){
+            $("#tabel").DataTable();
+        })
+    </script>
 </body>
 </html>
